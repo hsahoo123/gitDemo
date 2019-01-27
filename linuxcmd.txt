@@ -1,0 +1,19 @@
+    1  cat /etc/passwd
+    2  who
+    3  who am i
+    4  netstat -tulpn
+    5  ps -ef | grep 4190
+    6  vi /etc/ssh/sshd_config
+    7  service sshd restart
+    8  echo $?
+    9  passwd
+   10  history
+   11  rpm -qa | grep httpd
+   12  yum install git -y
+   13  cd /opt
+   14  mkdir -p /opt/gitDemo
+   15  cd gitDemo/
+   16  git init
+   17  vi linuxcmd.txt
+   18  touch linuxcmd.txt
+
