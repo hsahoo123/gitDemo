@@ -17,3 +17,20 @@
    17  vi linuxcmd.txt
    18  touch linuxcmd.txt
 
+###git commsnd
+ 12  yum install git -y
+   13  cd /opt
+   14  mkdir -p /opt/gitDemo
+   15  cd gitDemo/
+   16  git init
+   17  vi linuxcmd.txt
+   18  touch linuxcmd.txt
+   19  history
+   20  vi linuxcmd.txt
+   21  cat linuxcmd.txt
+   22  git status
+   23  git add linuxcmd.txt
+   24  git status
+   25  git commit -m "first commot"
+   26  git status
+
