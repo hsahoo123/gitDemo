@@ -1,0 +1,37 @@
+Yml documents
+ansible modules
+install ansible
+ansible archtecture
+
+Git command to clone:
+git clone https://github.com/hsahoo123/gitDemo.git
+
+
+----------------------------------------------------Ansible-----------------------------
+Ansible Installation
+1. Create a new file called 'ansible.repo' in 
+cd /etc/yum.repos.d 
+ansible.repo
+
+2. Copy the following content into it:
+[Ansible]
+name = ansible
+baseurl = https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/
+enabled = 1
+gpgcheck = 0 
+3. Run 'yum update' 
+rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum -y install ansible
+
+ansible --version
+
+Add in /etc/ansible/host file
+[all]
+172.31.45.249 ansible_ssh_private_key_file=/root/.ssh/server1.pem ansible_ssh_user=ec2-user
+
+Execute command on remote host and return the output
+ansible all -m raw -a 'sudo uptime'
+
+   
+
+
