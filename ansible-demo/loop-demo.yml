@@ -1,0 +1,15 @@
+---
+- hosts: all
+  user: ec2-user
+  sudo: true
+
+  
+  tasks:
+  - name: create users
+    user: name={{ item }} state=absent
+    with_items: 
+      - user1
+      - user2
+      - user3
+
+...

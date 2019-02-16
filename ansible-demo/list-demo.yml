@@ -1,0 +1,12 @@
+---
+- hosts: all
+  user: ec2-user
+  sudo: true
+
+  vars_files:
+    - common_list.yml
+
+  tasks:
+    - name: install pakages
+      yum: name={{ item }} state=installed
+      loop: "{{listofpackages}}"    
